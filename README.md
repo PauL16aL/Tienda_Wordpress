@@ -22,7 +22,7 @@
 
 ![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/10e69a58-a6a1-4eee-aae0-e2885f716a62)
 
-$$ Finalizar Compra
+### Finalizar Compra
 
 ![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/8af2ed7b-9c1c-414d-88ba-09219be12851)
 ![Uploading image.png…]()
