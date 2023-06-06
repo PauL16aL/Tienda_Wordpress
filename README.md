@@ -1,24 +1,32 @@
 # Tienda_Wordpress
- Tienda de zapatillas TIGRE subido en el dominio https://tiendatigre.com
+ Tienda de zapatillas TIGRE 
+ Pagina WEB(https://tiendatigre.com/)
  
- 
-![image](https://user-images.githubusercontent.com/125236522/231643915-094fcbba-cb3a-4b9c-83f5-878d28f074b7.png)
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/154e9c36-3302-4ed9-bfef-5a016bbd312a)
 
-Menu Principal
+### Menu Principal
 
-![image](https://user-images.githubusercontent.com/125236522/231644167-4392223e-5e23-45f5-b3f5-a8ea7275412a.png)
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/83edde68-3e31-46f0-b2c4-94e50117bc1f)
 
-Catalogo/Tienda
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/b896086e-fa02-4ff8-ab18-0df7f59ad52d)
 
-![image](https://user-images.githubusercontent.com/125236522/231644268-b0de68a7-ba3e-446c-b5b5-faf072187827.png)
+### Catalogo/Tienda
 
-Menu Producto
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/3d957817-8005-41b0-a686-c17fc7b7adc7)
 
-![image](https://user-images.githubusercontent.com/125236522/231644551-4752cc73-bf03-4a9a-bcc9-13be88dbe877.png)
+### Menu Producto
 
-Carrito
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/60ca95a6-25b2-42c0-a717-99471ae80b2b)
 
-![image](https://user-images.githubusercontent.com/125236522/231644776-83a91bf8-53d3-4bc5-8878-9bac9f1f9939.png)
+### Carrito
+
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/10e69a58-a6a1-4eee-aae0-e2885f716a62)
+
+$$ Finalizar Compra
+
+![image](https://github.com/PauL16aL/Tienda_Wordpress/assets/125236522/8af2ed7b-9c1c-414d-88ba-09219be12851)
+![Uploading image.png…]()
+
 
 
 
