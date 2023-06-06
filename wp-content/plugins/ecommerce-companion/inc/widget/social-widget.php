@@ -9,30 +9,30 @@ class ecommerce_companion_social_icon_widget extends WP_Widget{
 				"Social Widget", // Widget Name
 				array(
 				"classname" => 'ecommerce_companion_social_icon_widget',
-				"description" => __( 'Social Icon Widgets', 'eventpress' ), 
+				"description" => __( 'Social Icon Widgets', 'ecommerce-companion' ), 
 				) 
 			);	
 			
 			$this->defaults = array(
-				'title' => __( 'Social Icon', 'eventpress' ),				
-				'color' => __( 'Icon Color', 'eventpress' ),				
-				'background_color' => __( 'Icon BG', 'eventpress' ),				
-				'bg_radius' => __( 'Icon Bg Radius', 'eventpress' ),
-				'font_size' => __( 'Font Size', 'eventpress' ),		
+				'title' => __( 'Social Icon', 'ecommerce-companion' ),				
+				'color' => __( 'Icon Color', 'ecommerce-companion' ),				
+				'background_color' => __( 'Icon BG', 'ecommerce-companion' ),				
+				'bg_radius' => __( 'Icon Bg Radius', 'ecommerce-companion' ),
+				'font_size' => __( 'Font Size', 'ecommerce-companion' ),		
 				'social' => array()
 			);
 			
-		add_action( 'admin_enqueue_scripts', array( $this, 'eventpress_enqueue_admin_scripts' ) );
-		add_action('admin_enqueue_scripts', array($this, 'eventpress_scripts'));
+		add_action( 'admin_enqueue_scripts', array( $this, 'ecommerce_companion_enqueue_admin_scripts' ) );
+		add_action('admin_enqueue_scripts', array($this, 'ecommerce_companion_scripts'));
 		}
 				
-		public function eventpress_scripts()
+		public function ecommerce_companion_scripts()
 		{
 		    wp_enqueue_style( 'wp-color-picker');
 			wp_enqueue_script( 'wp-color-picker');
 		}
 		
-		function eventpress_enqueue_admin_scripts() { 			
+		function ecommerce_companion_enqueue_admin_scripts() { 			
 			wp_enqueue_script( 'social-icon-widget-js', ECOMMERCE_COMP_PLUGIN_URL.'inc/widget/js/main.js', array( 'jquery', 'jquery-ui-sortable' ) );
 			wp_enqueue_style( 'social-icon-widget-css', ECOMMERCE_COMP_PLUGIN_URL . 'inc/widget/css/admin.css', false );
 		}
@@ -46,7 +46,7 @@ class ecommerce_companion_social_icon_widget extends WP_Widget{
 		$social_links = $this->get_social();
 ?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'eventpress' ); ?>:</label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'ecommerce-companion' ); ?>:</label>
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" type="text" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" class="widefat" />
 		</p>
 		
@@ -78,20 +78,20 @@ class ecommerce_companion_social_icon_widget extends WP_Widget{
 				</script>
 				
 		<p>
-			<label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color','eventpress'); ?> :</label>
+			<label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color','ecommerce-companion'); ?> :</label>
 			<input class="my-color-picker" type="text" id="<?php echo $this->get_field_id( 'color' ); ?>" name="<?php echo $this->get_field_name( 'color' ); ?>" value="<?php echo $instance['color']; ?>" class="widefat" /> 
 		</p>
 				
 		<p>
-			<label for="<?php echo $this->get_field_id( 'background_color' ); ?>"><?php _e( 'Icon Bg','eventpress'); ?> :</label>
+			<label for="<?php echo $this->get_field_id( 'background_color' ); ?>"><?php _e( 'Icon Bg','ecommerce-companion'); ?> :</label>
 			<input class="my-color-picker" type="text" id="<?php echo $this->get_field_id( 'background_color' ); ?>" name="<?php echo $this->get_field_name( 'background_color' ); ?>" value="<?php echo $instance['background_color']; ?>" class="widefat" /> 
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'bg_radius' ); ?>"><?php _e( 'Icon Bg Radius','eventpress'); ?> :</label>	
+			<label for="<?php echo $this->get_field_id( 'bg_radius' ); ?>"><?php _e( 'Icon Bg Radius','ecommerce-companion'); ?> :</label>	
 			<input class="icon_bg_radius" type="number" id="<?php echo $this->get_field_id( 'bg_radius' ); ?>" name="<?php echo $this->get_field_name( 'bg_radius' ); ?>" value="<?php echo $instance['bg_radius']; ?>" class="widefat" min="0" style="padding-right:0;" /> 
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'font_size' ); ?>"><?php _e( 'Font Size','eventpress'); ?> :</label>	
+			<label for="<?php echo $this->get_field_id( 'font_size' ); ?>"><?php _e( 'Font Size','ecommerce-companion'); ?> :</label>	
 			<input class="icon_bg_radius" type="number" id="<?php echo $this->get_field_id( 'font_size' ); ?>" name="<?php echo $this->get_field_name( 'font_size' ); ?>" value="<?php echo $instance['font_size']; ?>" class="widefat" min="14" style="padding-right:0;" /> 
 		</p>
 		
@@ -105,7 +105,7 @@ class ecommerce_companion_social_icon_widget extends WP_Widget{
 
 
 		<p>
-	  	<a href="#" class="mks_add_social button"><?php _e( 'Add Icon', 'eventpress' ); ?></a>
+	  	<a href="#" class="mks_add_social button"><?php _e( 'Add Icon', 'ecommerce-companion' ); ?></a>
 	  </p>
 
 	  <div class="mks_social_clone" style="display:none">
@@ -117,14 +117,14 @@ class ecommerce_companion_social_icon_widget extends WP_Widget{
 
 	function draw_social( $widget, $social_links, $selected = array( 'icon' => '', 'url' => '') ) { ?>
 
-				<label class="mks-sw-icon"><?php _e( 'Icon', 'eventpress' ); ?> :</label>
+				<label class="mks-sw-icon"><?php _e( 'Icon', 'ecommerce-companion' ); ?> :</label>
 				<select type="text" name="<?php echo $widget->get_field_name( 'social_icon' ); ?>[]" value="<?php echo $selected['icon']; ?>" style="font-family: 'FontAwesome', Arial; width: 82%">
 					<?php foreach ( $social_links as $key => $link ) : ?>
 						<option value="<?php echo $key; ?>" <?php selected( $key, $selected['icon'] ); ?>><?php echo $link; ?></option>
 					<?php endforeach; ?>
 				</select>
 
-				<p><label class="mks-sw-icon"><?php _e( 'Url', 'eventpress' ); ?> :</label>
+				<p><label class="mks-sw-icon"><?php _e( 'Url', 'ecommerce-companion' ); ?> :</label>
 				<input type="text" name="<?php echo $widget->get_field_name( 'social_url' ); ?>[]" value="<?php echo $selected['url']; ?>" placeholder="Example.com" style="width: 82%"></p>
 								
 				<span class="mks-remove-social dashicons dashicons-no-alt"></span>

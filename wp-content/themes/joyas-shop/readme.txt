@@ -92,6 +92,9 @@ License:  Self created by athemeart.com
 
 == Upgrade Notice  ==
 
+= 1.1.0 =
+* css tuning
+
 = 1.0.7 =
 * Add css for WooCommerce my account page
 

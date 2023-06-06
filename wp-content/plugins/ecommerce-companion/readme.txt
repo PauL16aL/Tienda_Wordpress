@@ -2,15 +2,15 @@
 Contributors: sellerthemes
 Tags: homepage, companion, demo, sections, Widget
 Requires at least: 4.0
-Tested up to: 6.1.1
+Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 3.2
+Stable tag: 3.5
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 == Description ==
 
-eCommerce Companion is created for <a href="https://sellerthemes.com/" rel="nofollow">Seller Theme</a>. The plugin set frontpage sections for navigation, info, slider, category, products & blog. It allow edit customizer settings for the theme. Extend your theme functionalities with one click import & enjoy free stock images. Some of our popular theme. See below free themes listed here. <a href="https://wordpress.org/themes/storely/" rel="nofollow">Storely</a>, <a href="https://wordpress.org/themes/shopient/" rel="nofollow">Shopient</a>
+eCommerce Companion is created for <a href="https://sellerthemes.com/" rel="nofollow">Seller Theme</a>. The plugin set frontpage sections for navigation, info, slider, category, products & blog. Single click installation and make your beautifully eCommerce website. It allow edit customizer settings for the theme. Extend your theme functionalities with one click import & enjoy free stock images. Some of our popular theme. See below free themes listed here. <a href="https://wordpress.org/themes/storely/" rel="nofollow">Storely</a>, <a href="https://wordpress.org/themes/shopient/" rel="nofollow">Shopient</a>
 
 **Features:**
 &#9989; Setup Header Section
@@ -49,6 +49,15 @@ eCommerce Companion WordPress plugin is licensed under the GPL3 (https://www.gnu
 
 
 == Changelog ==
+
+= 3.5 =
+* Updated - Plugin Description
+
+= 3.4 =
+* Fixed - Above Header Widget
+
+= 3.3 =
+* Tested - WP 6.2 Compatibility
 
 = 3.2 =
 * Readme Updated

@@ -9,16 +9,16 @@ class ecommerce_companion_info_widget extends WP_Widget{
 				"Info Widget", // Widget Name
 				array(
 				"classname" => 'ecommerce_companion_info_widget',
-				"description" => __( 'Info Icon Widgets', 'eventpress' ), 
+				"description" => __( 'Info Icon Widgets', 'ecommerce-companion' ), 
 				) 
 			);	
 			
 			$this->defaults = array(
-				'title' => __( 'Info Icon', 'eventpress' ),				
-				'color' => __( 'Icon Color', 'eventpress' ),
-				'background_color' => __( 'Icon BG', 'eventpress' ),				
-				'bg_radius' => __( 'Icon Bg Radius', 'eventpress' ),
-				'font_size' => __( 'Font Size', 'eventpress' ),				
+				'title' => __( 'Info Icon', 'ecommerce-companion' ),				
+				'color' => __( 'Icon Color', 'ecommerce-companion' ),
+				'background_color' => __( 'Icon BG', 'ecommerce-companion' ),				
+				'bg_radius' => __( 'Icon Bg Radius', 'ecommerce-companion' ),
+				'font_size' => __( 'Font Size', 'ecommerce-companion' ),				
 				'info' => array()
 			);
 		}
@@ -31,7 +31,7 @@ class ecommerce_companion_info_widget extends WP_Widget{
 		$info_links = $this->get_info();
 ?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'eventpress' ); ?>:</label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'ecommerce-companion' ); ?>:</label>
 			<input id="<?php echo $this->get_field_id( 'title' ); ?>" type="text" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $instance['title']; ?>" class="widefat" />
 		</p>
 		
@@ -43,7 +43,7 @@ class ecommerce_companion_info_widget extends WP_Widget{
 						widget.find( '.my-color-picker' ).wpColorPicker( {
 							change: _.throttle( function() { // For Customizer
 								$(this).trigger( 'change' );
-							}, 3000 )
+								}, 3000 )
 						});
 					}
 
@@ -63,22 +63,22 @@ class ecommerce_companion_info_widget extends WP_Widget{
 				</script>
 				
 		<p>
-			<label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color','eventpress'); ?> :</label>
+			<label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color','ecommerce-companion'); ?> :</label>
 			<input class="my-color-picker" type="text" id="<?php echo $this->get_field_id( 'color' ); ?>" name="<?php echo $this->get_field_name( 'color' ); ?>" value="<?php echo $instance['color']; ?>" class="widefat" /> 
 		</p>
 		
 		<p>
-			<label for="<?php echo $this->get_field_id( 'background_color' ); ?>"><?php _e( 'Icon Bg','eventpress'); ?> :</label>
+			<label for="<?php echo $this->get_field_id( 'background_color' ); ?>"><?php _e( 'Icon Bg','ecommerce-companion'); ?> :</label>
 			<input class="my-color-picker" type="text" id="<?php echo $this->get_field_id( 'background_color' ); ?>" name="<?php echo $this->get_field_name( 'background_color' ); ?>" value="<?php echo $instance['background_color']; ?>" class="widefat" /> 
 		</p>
 		
 		<p>
-			<label for="<?php echo $this->get_field_id( 'bg_radius' ); ?>"><?php _e( 'Icon Bg Radius','eventpress'); ?> :</label>	
+			<label for="<?php echo $this->get_field_id( 'bg_radius' ); ?>"><?php _e( 'Icon Bg Radius','ecommerce-companion'); ?> :</label>	
 			<input class="icon_bg_radius" type="number" id="<?php echo $this->get_field_id( 'bg_radius' ); ?>" name="<?php echo $this->get_field_name( 'bg_radius' ); ?>" value="<?php echo $instance['bg_radius']; ?>" class="widefat" min="0" style="padding-right:0;" /> 
 		</p>
 		
 		<p>
-			<label for="<?php echo $this->get_field_id( 'font_size' ); ?>"><?php _e( 'Font Size','eventpress'); ?> :</label>
+			<label for="<?php echo $this->get_field_id( 'font_size' ); ?>"><?php _e( 'Font Size','ecommerce-companion'); ?> :</label>
 			<input  type="number" id="<?php echo $this->get_field_id( 'font_size' ); ?>" name="<?php echo $this->get_field_name( 'font_size' ); ?>" value="<?php echo $instance['font_size']; ?>" min='14' class="widefat" style="padding-right: 0; width: 25%" /> 
 		</p>
 		
@@ -93,7 +93,7 @@ class ecommerce_companion_info_widget extends WP_Widget{
 
 
 		<p>
-	  	<a href="#" class="mks_add_info button"><?php _e( 'Add Icon', 'eventpress' ); ?></a>
+	  	<a href="#" class="mks_add_info button"><?php _e( 'Add Icon', 'ecommerce-companion' ); ?></a>
 	  </p>
 
 	  <div class="mks_info_clone" style="display:none">
@@ -105,17 +105,17 @@ class ecommerce_companion_info_widget extends WP_Widget{
 
 	function draw_info( $widget, $info_links, $selected = array( 'icon' => '', 'url' => '', 'text' => '') ) { ?>
 
-				<label class="mks-sw-icon"><?php _e( 'Icon', 'eventpress' ); ?> :</label>
+				<label class="mks-sw-icon"><?php _e( 'Icon', 'ecommerce-companion' ); ?> :</label>
 				<select type="text" name="<?php echo $widget->get_field_name( 'info_icon' ); ?>[]" value="<?php echo $selected['icon']; ?>" style="font-family: 'FontAwesome', Arial; width: 82%">
 					<?php foreach ( $info_links as $key => $link ) : ?>
 						<option value="<?php echo $key; ?>" <?php selected( $key, $selected['icon'] ); ?>><?php echo $link; ?></option>
 					<?php endforeach; ?>
 				</select>
 
-				<p><label class="mks-sw-icon"><?php _e( 'Url', 'eventpress' ); ?> :</label>
+				<p><label class="mks-sw-icon"><?php _e( 'Url', 'ecommerce-companion' ); ?> :</label>
 				<input type="text" name="<?php echo $widget->get_field_name( 'info_url' ); ?>[]" value="<?php echo $selected['url']; ?>" placeholder="Example.com" style="width: 82%"></p>
 								
-				<label class="mks-sw-icon"><?php _e( 'Text', 'eventpress' ); ?> :</label>
+				<label class="mks-sw-icon"><?php _e( 'Text', 'ecommerce-companion' ); ?> :</label>
 				<input type="text" name="<?php echo $widget->get_field_name( 'info_text' ); ?>[]" value="<?php echo $selected['text']; ?>" placeholder="abcxyz" style="width: 81%">	
 				
 				<span class="mks-remove-info dashicons dashicons-no-alt"></span>

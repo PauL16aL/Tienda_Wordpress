@@ -1636,3 +1636,6 @@ ul.product-action-link li a.loading::after, .woocommerce li.product .button.load
 .woocommerce-NoticeGroup{
     padding: 15px;
 }
+.pswp{
+    z-index: 9999;
+}

@@ -8,10 +8,10 @@
 		'retailsy_get_slider_default', json_encode(
 				 array(
 				array(
-					'image_url'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider1.png',
-					'image_url2'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider-speaker.png',
+					'image_url'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider.jpg',
+					'image_url2'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/product.png',
 					'title'           => esc_html__( 'Exclusive offers 30% Off', 'retailsy' ),
-					'subtitle'           => esc_html__( 'Hot Trending Collection 2021', 'retailsy' ),
+					'subtitle'           => esc_html__( 'A Different Kind of Ecommerce Store', 'retailsy' ),
 					'text2'	  =>  esc_html__( 'Shop Now', 'retailsy' ),
 					'link'	  =>  esc_html__( '#', 'retailsy' ),
 					'button_second'	  =>  esc_html__( 'Add To Cart', 'retailsy' ),
@@ -20,10 +20,10 @@
 					'id'              => 'customizer_repeater_slider_001',
 				),
 				array(
-					'image_url'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider2.png',
-					'image_url2'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/Iphone.png',
+					'image_url'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider2.jpg',
+					'image_url2'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/product2.png',
 					'title'           => esc_html__( 'Exclusive offers 30% Off', 'retailsy' ),
-					'subtitle'           => esc_html__( 'Hot Trending Collection 2022', 'retailsy' ),
+					'subtitle'           => esc_html__( 'Hot Trending Collection 2023', 'retailsy' ),
 					'text2'	  =>  esc_html__( 'Shop Now', 'retailsy' ),
 					'link'	  =>  esc_html__( '#', 'retailsy' ),
 					'button_second'	  =>  esc_html__( 'Add To Cart', 'retailsy' ),
@@ -32,8 +32,8 @@
 					'id'              => 'customizer_repeater_slider_002',
 				),
 				array(
-					'image_url'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider3.png',
-					'image_url2'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/bass.png',
+					'image_url'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/slider3.jpg',
+					'image_url2'       => ECOMMERCE_COMP_PLUGIN_URL . 'inc/themes/retailsy/assets/images/homepage1/page-slider/product3.png',
 					'title'           => esc_html__( 'Exclusive offers 30% Off', 'retailsy' ),
 					'subtitle'           => esc_html__( 'Hot Trending Collection 2023', 'retailsy' ),
 					'text2'	  =>  esc_html__( 'Shop Now', 'retailsy' ),
